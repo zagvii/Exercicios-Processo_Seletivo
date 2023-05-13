@@ -20,7 +20,7 @@ var clientes = [
 
 var numero = "5(1)9-876-543-21";
 
-// 01. Percorrndo o objeto clientes e exibidno o nome de cada cliente.
+// 01. Percorrndo o objeto clientes e exibindo o nome de cada cliente.
 // Último Sobrenome: a função SPLIT separa cada palavra da string com o nome do cliente e a função POP seleciona o último argumento separado.
 // Primeiro Nome: a função SPLIT separa cada palavra da string com o nome do cliente e o [0] seleciona o argumento na primeira posição.
 clientes.forEach(cliente => {
@@ -33,7 +33,7 @@ clientes.forEach(cliente => {
 // Inicialmente, utiliza-se o REPLACE para remover caracteres especial da variável, apenas deixando os números.
 numero = numero.replace(/[^0-9]/g, '');
 
-// Posteriomente, também utiliza-se o replace com para formatar o número utilizando o padrão indicado.
+// Posteriomente, também utiliza-se o replace com uma expressão regular para formatar o número utilizando o padrão indicado.
 numero = numero.replace(/^([0-9]{2})([0-9]{1})([0-9]{4,5})([0-9]{4})$/, "($1) $2 $3-$4");
 
 // O resultado é exibido.
